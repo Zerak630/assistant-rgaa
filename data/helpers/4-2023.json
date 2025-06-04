@@ -1661,12 +1661,12 @@
 	"6.1.1": [
 		{
 			"helper": "outline",
-			"selector": "a[href]:not([role]), [role='link']",
+			"selector": "a[href]:not([role]):not(:has(img, canvas, embed, object, svg, [role='img'])), [role='link']:not(:has(img, canvas, embed, object, svg, [role='img']))",
 			"showTag": true
 		},
 		{
 			"helper": "showElement",
-			"selector": "a[href]:not([role]), [role='link']",
+			"selector": "a[href]:not([role]):not(:has(img, canvas, embed, object, svg, [role='img'])), [role='link']:not(:has(img, canvas, embed, object, svg, [role='img']))",
 			"attributes": ["title", "aria-label", "aria-labelledby"]
 		}
 	],
