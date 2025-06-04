@@ -7,6 +7,7 @@
 		},
 		{
 			"helper": "showAttributes",
+			"selector": "img:not(a img, button img, [role='link'] img, [role='link'], [role='button'] img), [role='img']:not(a [role='img'], button [role='img'], [role='link'] [role='img'], [role='button'] [role='img'])",
 			"attributes": [
 				"aria-labelledby",
 				"aria-label",
@@ -15,8 +16,15 @@
 				"role",
 				"aria-hidden",
 				"hidden"
+			]
+		},
+		{
+			"helper": "showAttributes",
+			"selector": "img:not(a img, button img, [role='link'] img, [role='link'], [role='button'] img), [role='img']:not(a [role='img'], button [role='img'], [role='link'] [role='img'], [role='button'] [role='img'])",
+			"attributes": [
+				"alt"
 			],
-			"showMissingAttributes": true
+			"showMissing": true
 		}
 	],
 	"1.1.2": [
