@@ -1709,17 +1709,18 @@
 	"6.1.3": [
 		{
 			"helper": "outline",
-			"selector": "a[href]:not([role]), [role='link'], img[usemap], a[href]:not([role]) canvas, [role='link'] canvas, a[href]:not([role]) object, [role='link'] object, a[href]:not([role]) embed, [role='link'] embed, a[href]:not([role]) svg, [role='link'] svg"
+			"selector": "a[href]:not([role]), [role='link']",
+			"showTag":true
 		},
 		{
 			"helper": "showElement",
 			"selector": "a[href]:not([role]), [role='link']",
-			"attributes": ["title", "aria-label", "aria-labelledby"]
+			"attributes": ["title", "aria-label", "aria-labelledby", "role", "aria-hidden",	"hidden"]
 		},
 		{
 			"helper": "showElement",
 			"selector": "a[href]:not([role]) img, [role='link'] img, area[href]",
-			"attributes": ["alt", "title", "aria-label", "aria-labelledby"]
+			"attributes": ["alt", "title", "aria-label", "aria-labelledby", "role", "aria-hidden",	"hidden"]
 		},
 		{
 			"helper": "showChildElements",
@@ -1731,7 +1732,7 @@
 		{
 			"helper": "showElement",
 			"selector": "a[href]:not([role]) object, [role='link'] object, a[href]:not([role]) embed, [role='link'] embed",
-			"attributes": ["title", "aria-label", "aria-labelledby"],
+			"attributes": ["title", "aria-label", "aria-labelledby", "role", "aria-hidden",	"hidden"],
 			"showContent": true
 		},
 		{
@@ -1758,7 +1759,10 @@
 				"aria-label",
 				"aria-labelledby",
 				"xlink:href",
-				"x-link:title"
+				"x-link:title",
+				"role", 
+				"aria-hidden",	
+				"hidden"
 			]
 		}
 	],
