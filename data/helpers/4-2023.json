@@ -2074,23 +2074,26 @@
 	"9.3.2": [
 		{
 			"helper": "outline",
-			"selector": "ol, ol li",
-			"showTag": true
+			"selector": "ol:not([role]), ol:not([role]) li:not([role])",
+			"showTag":true
 		},
 		{
 			"helper": "outline",
-			"selector": "[role='list'], [role='list'] [role='listitem']"
+			"selector": "[role='list'], [role='list'] [role='listitem']",
+			"showTag":true
 		},
 		{
 			"helper": "showAttributes",
 			"selector": "[role='list'], [role='list'] [role='listitem']",
-			"attributes": ["role"]
+			"attributes": [
+				"role"
+			]
 		}
 	],
 	"9.3.3": [
 		{
 			"helper": "outline",
-			"selector": "dl,dt,dd",
+			"selector": "dl:not([role]),dt:not([role]),dd:not([role])",
 			"showTag": true
 		}
 	],
