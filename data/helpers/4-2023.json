@@ -1817,11 +1817,11 @@
 	"7.1.1": [
 		{
 			"helper": "outline",
-			"selector": "[role], a[href^='javascript:void(0);']"
+			"selector": "[role], a[href^='javascript:void(0);'], [onclick], [onchange]"
 		},
 		{
 			"helper": "showElement",
-			"selector": "[role], a[href^='javascript:void(0);'], [aria-atomic], [aria-busy], [aria-current], [aria-controls], [aria-describedat], [aria-describedby], [aria-disabled], [aria-dropeffect], [aria-flowto], [aria-grabbed], [aria-haspopup], [aria-invalid], [aria-live], [aria-owns], [aria-autocomplete], [aria-checked], [aria-expanded], [aria-hidden='true'], [aria-label], [aria-level], [aria-multiline], [aria-multiselectable], [aria-orientation], [aria-pressed], [aria-readonly], [aria-required], [aria-selected], [aria-sort], [aria-valuemax], [aria-valuemin], [aria-valuenow], [aria-valuetext], [aria-relevant], [aria-modal]",
+			"selector": "[role], a[href^='javascript:void(0);'], [aria-atomic], [aria-busy], [aria-current], [aria-controls], [aria-describedat], [aria-describedby], [aria-disabled], [aria-dropeffect], [aria-flowto], [aria-grabbed], [aria-haspopup], [aria-invalid], [aria-live], [aria-owns], [aria-autocomplete], [aria-checked], [aria-expanded], [aria-hidden='true'], [aria-label], [aria-level], [aria-multiline], [aria-multiselectable], [aria-orientation], [aria-pressed], [aria-readonly], [aria-required], [aria-selected], [aria-sort], [aria-valuemax], [aria-valuemin], [aria-valuenow], [aria-valuetext], [aria-relevant], [aria-modal], [popover], [popovertarget], dialog",
 			"attributes": [
 				"role",
 				"title",
@@ -1858,7 +1858,9 @@
 				"aria-valuenow",
 				"aria-valuetext",
 				"aria-relevant",
-				"aria-modal"
+				"aria-modal", 
+				"popover", 
+				"popovertarget"
 			]
 		}
 	],
