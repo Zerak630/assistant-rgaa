@@ -1976,7 +1976,7 @@
 	"8.9.1": [
 		{
 			"helper": "outline",
-			"selector": "h1, h2, h3, h4, h5, h6, p, p:empty, li, blockquote",
+			"selector": "h1, h2, h3, h4, h5, h6, p, p:empty, li, blockquote, br, q, [role='presentation']",
 			"showTag": true
 		},
 		{
@@ -2042,7 +2042,7 @@
 	"9.2.1": [
 		{
 			"helper": "outline",
-			"selector": "header, nav, main, footer",
+			"selector": "header, nav, main, footer, aside, search, section, [role='banner'], [role='complementary'], [role='contentinfo'], [role='main'], [role='nav'], [role='region'], [role='search']",
 			"showTag": true
 		},
 		{
