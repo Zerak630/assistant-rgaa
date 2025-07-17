@@ -1769,22 +1769,49 @@
 	"6.2.1": [
 		{
 			"helper": "outline",
-			"selector": "a[href]:not([role]), [role='link']"
+			"selector": "a[href]:not([role]), [role='link']",
+			"showTag":true
 		},
 		{
 			"helper": "showElement",
 			"selector": "a[href]:not([role]), [role='link']",
-			"attributes": ["aria-label", "aria-labelledby"]
-		},
+			"attributes": [
+				"aria-label",
+				"aria-labelledby",
+				"title",
+				"role"
+			]
+		}, 
 		{
 			"helper": "showElement",
 			"selector": "a[href]:not([role]) img, [role='link'] img, area[href]",
-			"attributes": ["alt"]
+			"attributes": [
+				"alt"
+			],
+			"showMissingAttributes":true
+		},
+		{
+			"helper": "showElement",
+			"selector": "a[href]:not([role]) img, [role='link'] img, a[href]:not([role]) [role='img'], [role='link'] [role='img']",
+			"attributes": [
+				"role",
+				"aria-label",
+				"aria-labelledby",
+				"title", 
+				"alt", 
+				"aria-hidden",
+				"hidden"
+			]
 		},
 		{
 			"helper": "showElement",
 			"selector": "a[href]:not([role]) svg, [role='link'] svg",
-			"attributes": ["aria-label"]
+			"attributes": [
+				"aria-label",
+				"role",
+				"aria-hidden",
+				"hidden"
+			]
 		}
 	],
 	"7.1.1": [
