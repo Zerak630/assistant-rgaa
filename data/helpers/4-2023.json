@@ -1866,6 +1866,11 @@
 	],
 	"7.5.1": [
 		{
+			"helper": "outline",
+			"selector": "[role='status'], [aria-live='polite']",
+			"showTag":true
+		},
+		{
 			"helper": "showElement",
 			"selector": "[role='status'], [aria-live='polite']",
 			"attributes": ["role", "aria-live", "aria-atomic"]
@@ -1873,15 +1878,25 @@
 	],
 	"7.5.2": [
 		{
+			"helper": "outline",
+			"selector": "[role='alert'], [aria-live='polite'], [aria-live='assertive']",
+			"showTag":true
+		},
+		{
 			"helper": "showElement",
-			"selector": "[role='log'], [role='progressbar'], [role='status'], [aria-live='polite']",
+			"selector": "[role='alert'], [aria-live='polite'], [aria-live='assertive']",
 			"attributes": ["role", "aria-live", "aria-atomic"]
 		}
 	],
 	"7.5.3": [
 		{
+			"helper": "outline",
+			"selector": "[role='log'], [role='progressbar'], [role='status'], [aria-live='polite']",
+			"showTag":true
+		},
+		{
 			"helper": "showElement",
-			"selector": "[role='status'], [aria-live='polite']",
+			"selector": "[role='log'], [role='progressbar'], [role='status'], [aria-live='polite']",
 			"attributes": ["role", "aria-live", "aria-atomic"]
 		}
 	],
