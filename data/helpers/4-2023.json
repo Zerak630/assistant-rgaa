@@ -2055,17 +2055,20 @@
 	"9.3.1": [
 		{
 			"helper": "outline",
-			"selector": "ul, ul li",
-			"showTag": true
+			"selector": "ul:not([role]), ul:not([role]) li:not([role])",
+			"showTag":true
 		},
 		{
 			"helper": "outline",
-			"selector": "[role='list'], [role='list'] [role='listitem']"
+			"selector": "[role='list'], [role='list'] [role='listitem']",
+			"showTag":true
 		},
 		{
 			"helper": "showAttributes",
 			"selector": "[role='list'], [role='list'] [role='listitem']",
-			"attributes": ["role"]
+			"attributes": [
+				"role"
+			]
 		}
 	],
 	"9.3.2": [
