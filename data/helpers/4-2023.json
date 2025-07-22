@@ -2511,13 +2511,20 @@
 	"11.8.1": [
 		{
 			"helper": "outline",
-			"selector": "select"
+			"selector": "select, [role='listbox'], [role='listbox'] [role='group']"
 		},
 		{
 			"helper": "showElement",
 			"selector": "select",
 			"attributes": [],
 			"showEmpty": true
+		},
+		{
+			"helper": "showElement",
+			"selector": "[role='listbox'], [role='group']",
+			"attributes": [
+				"role"
+			]
 		},
 		{
 			"helper": "showChildElements",
@@ -2527,41 +2534,62 @@
 			"showEmpty": true
 		}
 	],
-	"11.8.2": [
+	"11.8.2": [		
 		{
 			"helper": "outline",
-			"selector": "select:has(optgroup)"
+			"selector": "select:has(optgroup), [role='listbox']:has([role='group']), [role='listbox']:has([role='group']) [role='group']"
 		},
 		{
 			"helper": "showElement",
 			"selector": "select:has(optgroup)",
-			"attributes": [],
-			"showEmpty": true
+			"attributes": []
+		},
+		{
+			"helper": "showElement",
+			"selector": "[role='listbox']:has([role='group']), [role='group']",
+			"attributes": [
+				"role",
+				"aria-labelledby",
+				"label"
+			]
 		},
 		{
 			"helper": "showChildElements",
 			"selector": "select:has(optgroup)",
 			"childrenSelector": "optgroup",
-			"attributes": ["label"],
-			"showMissingAttributes": true
+			"attributes": [
+				"label",
+				"aria-labelledby"
+			]
 		}
 	],
-	"11.8.3": [
+	"11.8.3": [		
 		{
 			"helper": "outline",
-			"selector": "select:has(optgroup)"
+			"selector": "select:has(optgroup), [role='listbox']:has([role='group']), [role='listbox']:has([role='group']) [role='group']"
 		},
 		{
 			"helper": "showElement",
 			"selector": "select:has(optgroup)",
-			"attributes": [],
-			"showEmpty": true
+			"attributes": []
+		},
+		{
+			"helper": "showElement",
+			"selector": "[role='listbox']:has([role='group']), [role='group']",
+			"attributes": [
+				"role",
+				"aria-labelledby",
+				"label"
+			]
 		},
 		{
 			"helper": "showChildElements",
 			"selector": "select:has(optgroup)",
 			"childrenSelector": "optgroup",
-			"attributes": ["label"]
+			"attributes": [
+				"label",
+				"aria-labelledby"
+			]
 		}
 	],
 	"11.9.1": [
