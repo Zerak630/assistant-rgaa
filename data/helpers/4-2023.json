@@ -2593,49 +2593,113 @@
 		}
 	],
 	"11.9.1": [
+		
 		{
 			"helper": "outline",
-			"selector": "button, [type='submit'], [type='reset'], [type='image'], [type='button']"
+			"selector": "button:not([role]), [type='submit'], [type='reset'], [type='image'], [role='button'], [type='button']:not([role])",
+			"showTag":true
+		},
+		{
+			"helper": "outline",
+			"selector": "button:not([role]) *, [type='submit'] *, [type='reset'] *, [type='image'] *, [role='button'] *,[type='button']:not([role]) *",
+			"showTag":true
 		},
 		{
 			"helper": "showElement",
-			"selector": "button, [type='submit'], [type='reset'], [type='image'], [type='button']",
+			"selector": "button:not([role]), [type='submit'], [type='reset'], [type='image'], [role='button'], [type='button']:not([role])",
 			"attributes": [
 				"type",
 				"value",
 				"alt",
 				"title",
 				"aria-label",
-				"aria-labelledby"
+				"aria-labelledby",
+				"role"
 			]
 		},
 		{
-			"helper": "showElement",
-			"selector": "[id]",
-			"attributes": ["id"]
+			"helper": "showChildElements",
+			"selector": "button:not([role]), [type='submit'], [type='reset'], [type='image'], [role='button'], [type='button']:not([role])",
+			"childrenSelector": "img",
+			"attributes": [
+				"aria-label",
+				"aria-labelledby",
+				"alt"
+			],
+			"showMissingAttributes":true
+		},
+		{
+			"helper": "showChildElements",
+			"selector": "button:not([role]), [type='submit'], [type='reset'], [type='image'], [role='button'], [type='button']:not([role])",
+			"childrenSelector": "svg",
+			"attributes": [
+				"aria-label",
+				"aria-labelledby"
+			],
+			"showMissingAttributes":true
+		},
+		{
+			"helper": "showChildElements",
+			"selector": "button:not([role]) svg, [type='submit'] svg, [type='reset'] svg, [type='image'] svg, [role='button'] svg, [type='button']:not([role]) svg",
+			"childrenSelector": "title, desc, text",
+			"attributes": [
+			],
+			"showContent":true
 		}
 	],
 	"11.9.2": [
+		
 		{
 			"helper": "outline",
-			"selector": "button, [type='submit'], [type='reset'], [type='image'], [type='button']"
+			"selector": "button:not([role]), [type='submit'], [type='reset'], [type='image'],[role='button'], [type='button']:not([role])",
+			"showTag":true
+		},
+		{
+			"helper": "outline",
+			"selector": "button:not([role]) *, [type='submit'] *, [type='reset'] *, [type='image'] *,[role='button'] *, [type='button']:not([role]) *",
+			"showTag":true
 		},
 		{
 			"helper": "showElement",
-			"selector": "button, [type='submit'], [type='reset'], [type='image'], [type='button']",
+			"selector": "button:not([role]), [type='submit'], [type='reset'], [type='image'], [role='button'], [type='button']:not([role])",
 			"attributes": [
 				"type",
 				"value",
 				"alt",
 				"title",
 				"aria-label",
-				"aria-labelledby"
+				"aria-labelledby",
+				"role"
 			]
 		},
 		{
-			"helper": "showElement",
-			"selector": "[id]",
-			"attributes": ["id"]
+			"helper": "showChildElements",
+			"selector": "button:not([role]), [type='submit'], [type='reset'], [type='image'],[role='button'], [type='button']:not([role])",
+			"childrenSelector": "img",
+			"attributes": [
+				"aria-label",
+				"aria-labelledby",
+				"alt"
+			],
+			"showMissingAttributes":true
+		},
+		{
+			"helper": "showChildElements",
+			"selector": "button:not([role]), [type='submit'], [type='reset'], [type='image'],[role='button'], [type='button']:not([role])",
+			"childrenSelector": "svg",
+			"attributes": [
+				"aria-label",
+				"aria-labelledby"
+			],
+			"showMissingAttributes":true
+		},
+		{
+			"helper": "showChildElements",
+			"selector": "button:not([role]) svg, [type='submit'] svg, [type='reset'] svg, [type='image'] svg, [role='button'] svg, [type='button']:not([role]) svg",
+			"childrenSelector": "title, desc, text",
+			"attributes": [
+			],
+			"showContent":true
 		}
 	],
 	"11.10.1": [
