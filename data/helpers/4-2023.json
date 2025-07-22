@@ -2261,9 +2261,11 @@
 			"attributes": ["title", "aria-label", "aria-labelledby"]
 		},
 		{
-			"helper": "showAttributes",
-			"selector": "[id]",
-			"attributes": ["id"]
+			"helper": "showElement",
+			"selector": "input:not([type='hidden']):not([type='submit']):not([type='reset']):not([type='image']):not([type='button']), select, textarea, output, progress, meter, [role='checkbox'], [role='switch'], [role='radio']",
+			"attributes": [
+				"id"
+			]
 		},
 		{
 			"helper": "showElement",
@@ -2275,7 +2277,8 @@
 	"11.1.2": [
 		{
 			"helper": "outline",
-			"selector": "label, input:not([type='hidden']):not([type='submit']):not([type='reset']):not([type='image']):not([type='button']), select, textarea, output, progress, meter, [role='checkbox'], [role='switch'], [role='radio']"
+			"selector": "label, input:not([type='hidden']):not([type='submit']):not([type='reset']):not([type='image']):not([type='button']), select, textarea, output, progress, meter, [role='checkbox'], [role='switch'], [role='radio']",
+			"showTag": true
 		},
 		{
 			"helper": "showElement",
