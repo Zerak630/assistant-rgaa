@@ -2948,6 +2948,19 @@
 			"attributes": ["http-equiv", "content"]
 		}
 	],
+	"13.3.1": [
+		{
+			"helper": "outline",
+			"selector": "a[href^='#'], button",
+			"showTag": true
+		},
+		{
+			"helper": "showElement",
+			"selector": "a[href$='.pdf'],a[href$='.doc'],a[href$='.docx'],a[href$='.xls'],a[href$='.xlsx'],a[href$='.ppt'],a[href$='.pptx'],a[href$='.odt'],a[href$='.ods'],a[href$='.odp'],a[href$='.epub']",
+			"attributes": ["href"],
+			"showName": true
+		} 
+	],
 	"13.5.1": [
 		{
 			"helper": "showAttributes",
