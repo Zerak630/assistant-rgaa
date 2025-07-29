@@ -2120,8 +2120,13 @@
 	],
 	"10.1.2": [
 		{
+			"helper": "outline",
+			"selector": "[align], [alink], [background], [bgcolor], [border], [cellpadding], [cellspacing], [char], [charoff], [clear], [compact], body [color], [frameborder], [hspace], [link], [marginheight], [marginwidth], [text], [valign], [vlink], [vspace], [size]:not(select), [height]:not(svg):not(canvas):not(embed):not(object):not(img), [width]:not(svg):not(canvas):not(embed):not(object):not(img)",
+			"showTag": true
+		},
+		{
 			"helper": "showElement",
-			"selector": "[align], [alink], [background], [bgcolor], [border], [cellpadding], [cellspacing], [char], [charoff], [clear], [compact], [color], [frameborder], [hspace], [link], [marginheight], [marginwidth], [text], [valign], [vlink], [vspace], [size]:not(select), [height]:not(svg):not(canvas):not(embed):not(object):not(img), [width]:not(svg):not(canvas):not(embed):not(object):not(img)",
+			"selector": "[align], [alink], [background], [bgcolor], [border], [cellpadding], [cellspacing], [char], [charoff], [clear], [compact], body [color], [frameborder], [hspace], [link], [marginheight], [marginwidth], [text], [valign], [vlink], [vspace], [size]:not(select), [height]:not(svg):not(canvas):not(embed):not(object):not(img), [width]:not(svg):not(canvas):not(embed):not(object):not(img)",
 			"attributes": [
 				"align",
 				"alink",
